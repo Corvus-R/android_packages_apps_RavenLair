@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2019 The Dirty Unicorns Project
+<!-- Copyright (C) 2020 CorvusROM
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -54,9 +54,6 @@
 
     <!-- Whether to display power menu category -->
     <bool name="has_powermenu">true</bool>
-
-    <!-- Whether to display corvus parts -->
-    <bool name="has_corvus_parts_available">false</bool>
 
     <!-- FOD recognizing animation -->
     <bool name="has_fod_animation_picker">false</bool>

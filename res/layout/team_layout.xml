@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 The Dirty Unicorns Project
+<!-- Copyright (C) 2020 CorvusROM
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -83,7 +83,7 @@
 
         </RelativeLayout>
 
-        <com.dirtyunicorns.support.helpers.CircularImageView
+        <com.corvus.support.helpers.CircularImageView
             android:id="@+id/devImage"
             android:layout_width="60dp"
             android:layout_height="60dp"

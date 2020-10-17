@@ -16,28 +16,18 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
-        android:key="corvus_parts_category"
-        android:icon="@drawable/dt_corvus_parts_bg"
-        android:title="@string/corvus_parts_title"
-        android:summary="@string/corvus_parts_summary" >
-        <intent android:action="com.android.settings.action.EXTRA_SETTINGS"
-            android:targetPackage="com.corvus.parts"
-            android:targetClass="com.corvus.parts.DeviceSettingsActivity" />
-    </com.dirtyunicorns.tweaks.preferences.CategoryPreference>
-
-    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
+    <com.raven.lair.preferences.CategoryPreference
         android:key="notifications_category"
         android:icon="@drawable/dt_notifications_bg"
         android:title="@string/notifications_title"
         android:summary="@string/notifications_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.system.Notifications" />
+        android:fragment="com.raven.lair.fragments.system.Notifications" />
 
-    <com.dirtyunicorns.tweaks.preferences.CategoryPreference
+    <com.raven.lair.preferences.CategoryPreference
         android:key="miscellaneous_category"
         android:icon="@drawable/dt_miscellaneous_bg"
         android:title="@string/miscellaneous_title"
         android:summary="@string/miscellaneous_summary"
-        android:fragment="com.dirtyunicorns.tweaks.fragments.system.Miscellaneous" />
+        android:fragment="com.raven.lair.fragments.system.Miscellaneous" />
 
 </PreferenceScreen>
