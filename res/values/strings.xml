@@ -11,8 +11,10 @@
      limitations under the License.
 -->
 
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <color name="homepage_raven_background">#D32F2F</color>
+    <!-- Raven's Lair -->
+    <string name="ravenlair_title">Raven\'s Lair</string>
+    <string name="ravenlair_summary">Unleash the Raven</string>
 
 </resources>
