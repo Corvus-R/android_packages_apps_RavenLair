@@ -17,4 +17,17 @@
     <string name="ravenlair_title">Raven\'s Lair</string>
     <string name="ravenlair_summary">Unleash the Raven</string>
 
+    <!-- The Team -->
+    <string name="dialog_team_title">The Team</string>
+    <string name="developer_title">Developer</string>
+    <string name="maintainer_title">Maintainer</string>
+    <string name="contributor_title">Contributor</string>
+
+    <!-- Bottom navigation -->
+    <string name="bottom_nav_system_title">System</string>
+    <string name="bottom_nav_lockscreen_title">Lockscreen</string>
+    <string name="bottom_nav_statusbar_title">Statusbar</string>
+    <string name="bottom_nav_hardware_title">Hardware</string>
+    <string name="bottom_nav_multitasking_title">Multitasking</string>
+
 </resources>

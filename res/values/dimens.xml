@@ -21,4 +21,22 @@
     <!-- Dashboard foreground image inset (from background edge to foreground edge) -->
     <dimen name="dashboard_tile_foreground_image_inset">6dp</dimen>
 
+    <!-- Cardview Preference -->
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="card_margin_top">4dp</dimen>
+    <dimen name="card_margin_bottom">4dp</dimen>
+    <dimen name="card_margin_right">8dp</dimen>
+    <dimen name="card_margin_left">8dp</dimen>
+
+    <!-- The Team -->
+    <dimen name="team_recycler_height">500dp</dimen>
+
+    <dimen name="default_corner_radii">56dp</dimen>
+    <dimen name="default_nav_item_padding">10dp</dimen>
+    <dimen name="default_nav_item_text_size">11sp</dimen>
+    <dimen name="default_nav_item_text_padding">8dp</dimen>
+    <dimen name="default_nav_item_title_max_width">80dp</dimen>
+    <dimen name="default_icon_size">24dp</dimen>
+
 </resources>
