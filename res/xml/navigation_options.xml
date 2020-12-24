@@ -18,4 +18,13 @@
             xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
             android:title="@string/navigation_options_title" >
 
+   <com.corvus.support.preference.SecureSettingListPreference
+        android:key="navbar_layout_views"
+        android:title="@string/navbar_layout_title"
+        android:summary="%s"
+        android:entries="@array/navbar_layout_entries"
+        android:entryValues="@array/navbar_layout_values"
+        android:defaultValue="default"
+        android:dependency="navbar_visibility" />
+
 </PreferenceScreen>

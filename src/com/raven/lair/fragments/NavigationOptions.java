@@ -37,6 +37,8 @@ import com.android.settingslib.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
+import com.android.internal.util.corvus.Utils;
+
 import com.corvus.support.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
@@ -45,6 +47,10 @@ import java.util.List;
 public class NavigationOptions extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener, Indexable {
 
+    private static final String LAYOUT_SETTINGS = "navbar_layout_views";
+
+    private Preference mLayoutSettings;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +58,11 @@ public class NavigationOptions extends SettingsPreferenceFragment
 
         final PreferenceScreen prefSet = getPreferenceScreen();
 
+        mLayoutSettings = (Preference) findPreference(LAYOUT_SETTINGS);
+
+        if (!Utils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton")) {
+            prefScreen.removePreference(mLayoutSettings);
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
