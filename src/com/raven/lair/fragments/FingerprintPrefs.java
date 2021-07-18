@@ -26,7 +26,7 @@ import androidx.preference.*;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.android.internal.util.corvus.fod.FodUtils;
+import com.android.internal.util.corvus.FodUtils;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
@@ -52,6 +52,7 @@ public class FingerprintPrefs extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.fingerprint_prefs);
         PreferenceScreen prefScreen = getPreferenceScreen();
+        Context mContext = getContext();
 
         mFODIconPickerCategory = findPreference(FOD_ICON_PICKER_CATEGORY);
         if (!FodUtils.hasFodSupport(getContext())) {
@@ -68,6 +69,7 @@ public class FingerprintPrefs extends SettingsPreferenceFragment
                     com.android.internal.R.bool.disable_fod_night_light);
             if (!isFodNightLightSupported) {
                 mFODIconPickerCategory.removePreference(mFODnightlight);
+            }
         }
     }
 
